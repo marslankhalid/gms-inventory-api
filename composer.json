@@ -1,0 +1,30 @@
+{
+    "name": "upheldsolutions/gms-inventory-api",
+    "description": "This will connect with group inventory system and retrieve group information and allow to create bookings",
+    "type": "library",
+    "require": {
+        "php": "^8.0|^8.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Arslan",
+            "email": "arslan.sunny79@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "UpheldSolutions\\GmsInventoryApi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UpheldSolutions\\GmsInventoryApi\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
