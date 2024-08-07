@@ -2,6 +2,7 @@
     "name": "upheldsolutions/gms-inventory-api",
     "description": "This will connect with group inventory system and retrieve group information and allow to create bookings",
     "type": "library",
+    "version": "0.1",
     "require": {
         "php": "^8.0|^8.1",
         "ext-json": "*",
