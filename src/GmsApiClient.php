@@ -44,7 +44,7 @@ class GmsApiClient
     public function login($email, $password)
     {
         $response = $this->client->post('/login', [
-            'body' => [
+            'form_params' => [
                 'email' => $email,
                 'password' => $password,
             ],
@@ -123,7 +123,7 @@ class GmsApiClient
     public function createBooking($groupId, $bookingInfo, $bookingDetails): mixed
     {
         $response = $this->client->post('create/booking', [
-            'body' => [
+            'form_params' => [
                 'group_id' => $groupId,
                 'agency_info' => $bookingInfo,
                 'booking_details' => $bookingDetails,
